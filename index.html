@@ -1,2 +1,64 @@
-<h1>HIii</h2>
-dssd
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DITISS Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            text-align: center;
+            margin: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+        select, button {
+            margin-top: 20px;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        select {
+            background: white;
+            color: black;
+        }
+        button {
+            background: #ff9800;
+            color: white;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #e68900;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>DITISS Project</h1>
+        <label for="selection">Select an option:</label>
+        <select id="selection">
+            <option value="resume.html">Resume</option>
+            <option value="project.html">Project Report</option>
+        </select>
+        <button onclick="navigate()">Go</button>
+    </div>
+
+    <script>
+        function navigate() {
+            const selection = document.getElementById("selection").value;
+            window.location.href = selection;
+        }
+    </script>
+</body>
+</html>
+

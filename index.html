@@ -1,65 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<h1>Project Done</h1>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DITISS Project</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #6a11cb, #2575fc);
-            color: white;
-            text-align: center;
-            margin: 50px;
-        }
-        .container {
-            max-width: 600px;
-            margin: auto;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 15px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-        }
-        select, button {
-            margin-top: 20px;
-            padding: 10px;
-            font-size: 16px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        select {
-            background: white;
-            color: black;
-        }
-        button {
-            background: #ff9800;
-            color: white;
-            transition: 0.3s;
-        }
-        button:hover {
-            background: #e68900;
-        }
-    </style>
+    <title>DevSecOps Portfolio | Ethical Hacking Theme</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=VT323&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1>DITISS Project</h1>
-        <label for="selection">Select an option:</label>
-        <select id="selection">
-            <option value="resume.html">Resume</option>
-            <option value="project.html">Project Report</option>
-        </select>
-        <button onclick="navigate()">Go</button>
-    </div>
 
-    <script>
-        function navigate() {
-            const selection = document.getElementById("selection").value;
-            window.location.href = selection;
-        }
-    </script>
+    <header>
+        <h1>🚀 DevSecOps Portfolio</h1>
+        <p class="tagline">Security-Driven Development & Ethical Hacking</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#technologies">Technologies</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="section">
+        <h2>💻 About Me</h2>
+        <p>I am a DevSecOps enthusiast passionate about security automation, cloud security, and ethical hacking.</p>
+    </section>
+
+    <section id="project" class="section">
+        <h2>🛡️ My DevSecOps Project</h2>
+        <p>Implemented a complete CI/CD pipeline with security integration using Jenkins, Docker, Ansible, and Trivy.</p>
+        <div class="image-container">
+            <img src="assets/images/devsecops_pipeline.png" alt="DevSecOps Pipeline">
+        </div>
+    </section>
+
+    <section id="technologies" class="section">
+        <h2>⚙️ Technologies Used</h2>
+        <ul>
+            <li>🔹 Jenkins - CI/CD Automation</li>
+            <li>🔹 Docker - Containerization</li>
+            <li>🔹 Ansible - Infrastructure as Code</li>
+            <li>🔹 Trivy - Security Scanning</li>
+            <li>🔹 AWS - Cloud Infrastructure</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>📧 Get in Touch</h2>
+        <p>Email: your_email@example.com</p>
+        <p>GitHub: <a href="https://github.com/yourgithub" target="_blank">github.com/yourgithub</a></p>
+    </section>
+
+    <footer>
+        <p>© 2025 DevSecOps Portfolio | All Rights Reserved</p>
+    </footer>
+
 </body>
 </html>
-

@@ -1,0 +1,72 @@
+/* General Styles */
+body {
+    background-color: #000;
+    color: #ff0000;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    padding: 20px;
+    background: linear-gradient(90deg, #8b0000, #000);
+}
+
+h1 {
+    font-size: 36px;
+    font-family: 'VT323', monospace;
+}
+
+.tagline {
+    font-size: 18px;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 10px;
+    background: #111;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff0000;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+}
+
+/* Sections */
+.section {
+    padding: 50px;
+    margin: 30px 10%;
+    background-color: #111;
+    border: 2px solid #ff0000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ff0000;
+}
+
+/* Images */
+.image-container img {
+    width: 70%;
+    margin-top: 20px;
+    border: 2px solid #ff0000;
+    box-shadow: 0 0 20px red;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background: #111;
+    margin-top: 50px;
+}
